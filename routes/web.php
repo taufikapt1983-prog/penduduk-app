@@ -7,7 +7,7 @@ use App\Http\Controllers\KeluargaController;
 use App\Http\Controllers\PendudukController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/dashboard');
 });
 
 Route::get('/dashboard', function () {

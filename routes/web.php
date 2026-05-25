@@ -5,7 +5,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\KeluargaController;
 use App\Http\Controllers\PendudukController;
-use App\Http\Controllers\ImportController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -33,9 +32,6 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('keluarga', KeluargaController::class);
 	Route::get('/search-penduduk', [PendudukController::class, 'search']);
-	
-	Route::get('/import-penduduk',[ImportController::class, 'index']);
-	Route::post('/import-penduduk',[ImportController::class, 'import']);
 	
 
 });

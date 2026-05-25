@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
     unzip \
     curl \
     zip \
+    libzip-dev \
     libpq-dev \
     libpng-dev \
     && docker-php-ext-install pdo pdo_pgsql gd zip
@@ -23,4 +24,4 @@ RUN php artisan key:generate
 
 EXPOSE 8080
 
-CMD php artisan serve --host=0.0.0.0 --port=8080
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8080"]

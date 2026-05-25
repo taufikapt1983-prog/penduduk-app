@@ -6,7 +6,6 @@ use Carbon\Carbon;
 use App\Models\Penduduk;
 use App\Models\Keluarga;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\ToCollection;
 
 class PendudukImport implements ToCollection
 {

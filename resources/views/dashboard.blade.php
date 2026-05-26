@@ -1,17 +1,51 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+@extends('adminlte::page')
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
-                    {{ __("You're logged in!") }}
-                </div>
+@section('title', 'Dashboard')
+
+@section('content_header')
+    <h1>Dashboard Penduduk</h1>
+@stop
+
+@section('content')
+
+<div class="row">
+
+    <div class="col-lg-3 col-6">
+        <div class="small-box bg-info">
+            <div class="inner">
+                <h3>150</h3>
+                <p>Jumlah Penduduk</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-users"></i>
             </div>
         </div>
     </div>
-</x-app-layout>
+
+    <div class="col-lg-3 col-6">
+        <div class="small-box bg-success">
+            <div class="inner">
+                <h3>70</h3>
+                <p>Laki-laki</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-male"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-6">
+        <div class="small-box bg-warning">
+            <div class="inner">
+                <h3>80</h3>
+                <p>Perempuan</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-female"></i>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@stop

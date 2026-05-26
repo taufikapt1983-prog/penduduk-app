@@ -21,8 +21,11 @@
 
     <div class="card-body">
 
-        <table id="tabelPenduduk"
-               class="table table-bordered table-striped table-hover">
+        <div class="table-responsive">
+
+			<table id="tabelPenduduk"
+				class="table table-bordered table-striped table-hover nowrap"
+				style="width:100%; white-space: nowrap;">
 
             <thead class="table-dark">
 
@@ -91,6 +94,8 @@
             </tbody>
 
         </table>
+		
+		</div>
 
     </div>
 

@@ -29,12 +29,13 @@
                 <tr>
                     <th>No</th>
                     <th>NIK</th>
+					<th>No KK</th>
                     <th>Nama</th>
                     <th>JK</th>
                     <th>Tempat Lahir</th>
                     <th>Tanggal Lahir</th>
                     <th>Alamat</th>
-                    <th>Status</th>
+                    <th>Hubungan Keluarga</th>
                     <th width="150">Aksi</th>
                 </tr>
 
@@ -49,10 +50,12 @@
                     <td>{{ $key + 1 }}</td>
 
                     <td>{{ $p->nik }}</td>
+					
+					<td>{{ $p->no_kk }}</td>
 
                     <td>{{ $p->nama }}</td>
 
-                    <td>{{ $p->jk }}</td>
+                    <td>{{ $p->jenis_kelamin }}</td>
 
                     <td>{{ $p->tempat_lahir }}</td>
 
@@ -60,7 +63,7 @@
 
                     <td>{{ $p->alamat }}</td>
 
-                    <td>{{ $p->status_keluarga }}</td>
+                    <td>{{ $p->hubungan_keluarga }}</td>
 
                     <td>
 

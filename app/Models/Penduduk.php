@@ -9,6 +9,7 @@ class Penduduk extends Model
     protected $fillable = [
         'keluarga_id',
         'nik',
+		'no_kk',
         'nama',
         'jenis_kelamin',
         'tempat_lahir',

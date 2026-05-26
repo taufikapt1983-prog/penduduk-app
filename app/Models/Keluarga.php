@@ -6,18 +6,21 @@ use Illuminate\Database\Eloquent\Model;
 
 class Keluarga extends Model
 {
+    protected $table = 'keluargas';
+
     protected $fillable = [
         'no_kk',
         'kepala_keluarga',
         'alamat',
         'rt',
         'rw',
+        'dusun',
         'desa',
-        'kecamatan',
-        'kabupaten',
+        'kecamatan'
     ];
-	public function penduduks()
-{
-    return $this->hasMany(Penduduk::class);
-}
+
+    public function penduduks()
+    {
+        return $this->hasMany(Penduduk::class);
+    }
 }

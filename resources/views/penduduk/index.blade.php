@@ -51,7 +51,7 @@
 
                     <td>{{ $p->nik }}</td>
 					
-					<td>{{ $p->no_kk }}</td>
+					<td>{{ $p->keluarga->no_kk ?? '-' }}</td>
 
                     <td>{{ $p->nama }}</td>
 

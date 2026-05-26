@@ -42,6 +42,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('keluarga', KeluargaController::class);
 	Route::get('/search-penduduk', [PendudukController::class, 'search']);
 	
+	Route::get('/penduduk', [PendudukController::class, 'index']);
+	
 
 });
 

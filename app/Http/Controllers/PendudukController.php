@@ -8,7 +8,14 @@ use App\Models\Keluarga;
 
 class PendudukController extends Controller
 {
-    public function create($keluarga_id)
+    public function index()
+	{
+    $penduduks = Penduduk::with('keluarga')->get();
+
+    return view('penduduk.index', compact('penduduks'));
+	}
+	
+	public function create($keluarga_id)
     {
         $keluarga = Keluarga::findOrFail($keluarga_id);
 

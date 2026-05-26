@@ -300,6 +300,17 @@ return [
 
     'menu' => [
         // Navbar items:
+		[
+			'text' => 'Dashboard',
+			'url'  => 'dashboard',
+			'icon' => 'fas fa-home',
+		],
+
+		[
+			'text' => 'Data Penduduk',
+			'url'  => 'penduduk',
+			'icon' => 'fas fa-users',
+		],
         [
             'type' => 'navbar-search',
             'text' => 'search',
@@ -430,7 +441,7 @@ return [
 
     'plugins' => [
         'Datatables' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',

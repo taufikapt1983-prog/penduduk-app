@@ -5,6 +5,15 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\KeluargaController;
 use App\Http\Controllers\PendudukController;
+use App\Models\Penduduk;
+
+Route::get('/penduduk', function () {
+
+    $penduduks = Penduduk::all();
+
+    return view('penduduk.index', compact('penduduks'));
+
+})->middleware(['auth']);
 
 Route::get('/', function () {
     return redirect('/dashboard');

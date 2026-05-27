@@ -38,9 +38,10 @@
                     <th>Tempat Lahir</th>
                     <th>Tanggal Lahir</th>
                     <th>Alamat Lengkap</th>
-					<th>Dusun</th>
 					<th>RT</th>
 					<th>RW</th>
+					<th>Desa</th>
+					<th>Kecamatan</th>
                     <th>Hubungan Keluarga</th>
                     <th width="150">Aksi</th>
                 </tr>
@@ -72,15 +73,19 @@
 					</td>
 
 					<td>
-						{{ $p->keluarga->dusun ?? '-' }}
-					</td>
-
-					<td>
 						{{ $p->keluarga->rt ?? '-' }}
 					</td>
 
 					<td>
 						{{ $p->keluarga->rw ?? '-' }}
+					</td>
+					
+					<td>
+						{{ $p->keluarga->desa ?? '-' }}
+					</td>
+					
+					<td>
+						{{ $p->keluarga->kecamatan ?? '-' }}
 					</td>
 
                     <td>{{ $p->hubungan_keluarga }}</td>

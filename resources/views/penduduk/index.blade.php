@@ -4,6 +4,11 @@
 
 @section('content_header')
     <h1>Data Penduduk</h1>
+@if(session('success'))
+<div class="alert alert-success">
+    {{ session('success') }}
+</div>
+@endif
 @stop
 
 @section('content')

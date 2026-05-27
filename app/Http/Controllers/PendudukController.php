@@ -66,7 +66,8 @@ class PendudukController extends Controller
         'hubungan_keluarga' => $request->hubungan_keluarga,
 		]);
 
-		return redirect('/keluarga/' . $penduduk->keluarga_id);
+		return redirect('/penduduk')
+		->with('success', 'Data berhasil diupdate');
 	}
 	
 	public function delete($id)
@@ -77,7 +78,8 @@ class PendudukController extends Controller
 
 		$penduduk->delete();
 
-		return redirect('/keluarga/' . $keluarga_id);
+		return redirect('/penduduk')
+		->with('success', 'Data berhasil dihapus');
 	}
 	public function search(Request $request)
 	{

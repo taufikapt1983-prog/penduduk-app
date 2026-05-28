@@ -48,6 +48,48 @@
 					<th>Desa</th>
 					<th>Kecamatan</th>
                     <th>Hubungan Keluarga</th>
+					<div class="mb-3">
+						<label>Alamat</label>
+						<input type="text"
+								class="form-control"
+								value="{{ $penduduk->keluarga->alamat ?? '' }}"
+								readonly>
+					</div>
+					<div class="mb-3">
+						<label>RT</label>
+						<input type="text"
+								class="form-control"
+								value="{{ $penduduk->keluarga->rt ?? '' }}"
+								readonly>
+					</div>
+					<div class="mb-3">
+						<label>RW</label>
+						<input type="text"
+								class="form-control"
+								value="{{ $penduduk->keluarga->rw ?? '' }}"
+								readonly>
+					</div>
+					<div class="mb-3">
+						<label>Desa</label>
+						<input type="text"
+								class="form-control"
+								value="{{ $penduduk->keluarga->desa ?? '' }}"
+								readonly>
+					</div>
+					<div class="mb-3">
+						<label>Kecamatan</label>
+						<input type="text"
+								class="form-control"
+								value="{{ $penduduk->keluarga->kecamatan ?? '' }}"
+								readonly>
+					</div>
+					<div class="mb-3">
+						<label>Kabupaten</label>
+						<input type="text"
+								class="form-control"
+								value="{{ $penduduk->keluarga->kabupaten ?? '' }}"
+								readonly>
+					</div>
                     <th width="150">Aksi</th>
                 </tr>
 
@@ -94,49 +136,6 @@
 					</td>
 
                     <td>{{ $p->hubungan_keluarga }}</td>
-					
-					<div class="mb-3">
-						<label>Alamat</label>
-						<input type="text"
-								class="form-control"
-								value="{{ $penduduk->keluarga->alamat ?? '' }}"
-								readonly>
-					</div>
-					<div class="mb-3">
-						<label>RT</label>
-						<input type="text"
-								class="form-control"
-								value="{{ $penduduk->keluarga->rt ?? '' }}"
-								readonly>
-					</div>
-					<div class="mb-3">
-						<label>RW</label>
-						<input type="text"
-								class="form-control"
-								value="{{ $penduduk->keluarga->rw ?? '' }}"
-								readonly>
-					</div>
-					<div class="mb-3">
-						<label>Desa</label>
-						<input type="text"
-								class="form-control"
-								value="{{ $penduduk->keluarga->desa ?? '' }}"
-								readonly>
-					</div>
-					<div class="mb-3">
-						<label>Kecamatan</label>
-						<input type="text"
-								class="form-control"
-								value="{{ $penduduk->keluarga->kecamatan ?? '' }}"
-								readonly>
-					</div>
-					<div class="mb-3">
-						<label>Kabupaten</label>
-						<input type="text"
-								class="form-control"
-								value="{{ $penduduk->keluarga->kabupaten ?? '' }}"
-								readonly>
-					</div>
 
                     <td>
 

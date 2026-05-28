@@ -92,6 +92,49 @@
 
                 </select>
             </div>
+			
+			<div class="mb-3">
+					<label>Alamat</label>
+					<input type="text"
+							class="form-control"
+							value="{{ $penduduk->keluarga->alamat ?? '' }}"
+							readonly>
+			</div>
+			<div class="mb-3">
+					<label>RT</label>
+					<input type="text"
+							class="form-control"
+							value="{{ $penduduk->keluarga->rt ?? '' }}"
+							readonly>
+			</div>
+			<div class="mb-3">
+					<label>RW</label>
+					<input type="text"
+							class="form-control"
+							value="{{ $penduduk->keluarga->rw ?? '' }}"
+							readonly>
+			</div>
+			<div class="mb-3">
+					<label>Desa</label>
+					<input type="text"
+							class="form-control"
+							value="{{ $penduduk->keluarga->desa ?? '' }}"
+							readonly>
+			</div>
+			<div class="mb-3">
+					<label>Kecamatan</label>
+					<input type="text"
+							class="form-control"
+							value="{{ $penduduk->keluarga->kecamatan ?? '' }}"
+							readonly>
+			</div>
+			<div class="mb-3">
+					<label>Kabupaten</label>
+					<input type="text"
+							class="form-control"
+							value="{{ $penduduk->keluarga->kabupaten ?? '' }}"
+							readonly>
+			</div>
 
             <button type="submit"
                     style="background:orange; color:white; padding:10px 20px; border:none; border-radius:5px;">

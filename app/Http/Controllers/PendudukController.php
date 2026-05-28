@@ -43,9 +43,9 @@ class PendudukController extends Controller
 
 	public function edit($id)
 	{
-		$penduduk = Penduduk::findOrFail($id);
+    $penduduk = Penduduk::with('keluarga')->findOrFail($id);
 
-		return view('penduduk.edit', compact('penduduk'));
+    return view('penduduk.edit', compact('penduduk'));
 	}
 
 	public function update(Request $request, $id)

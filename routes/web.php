@@ -6,15 +6,12 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\KeluargaController;
 use App\Http\Controllers\PendudukController;
 use App\Models\Penduduk;
+use App\Http\Controllers\DashboardController;
 
-Route::get('/penduduk', function () {
-
-    $penduduks = Penduduk::all();
-
-    return view('penduduk.index', compact('penduduks'));
-
-})->middleware(['auth']);
-
+Route::get('/dashboard', [DashboardController::class, 'index'])
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
+	
 Route::get('/', function () {
     return redirect('/dashboard');
 });

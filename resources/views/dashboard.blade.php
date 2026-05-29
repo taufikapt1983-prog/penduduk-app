@@ -13,7 +13,7 @@
     <div class="col-lg-3 col-6">
         <div class="small-box bg-info">
             <div class="inner">
-                <h3>150</h3>
+                <h3>{{ $totalPenduduk }}</h3>
                 <p>Jumlah Penduduk</p>
             </div>
             <div class="icon">
@@ -25,7 +25,7 @@
     <div class="col-lg-3 col-6">
         <div class="small-box bg-success">
             <div class="inner">
-                <h3>70</h3>
+                <h3>{{ $laki }}</h3>
                 <p>Laki-laki</p>
             </div>
             <div class="icon">
@@ -37,7 +37,7 @@
     <div class="col-lg-3 col-6">
         <div class="small-box bg-warning">
             <div class="inner">
-                <h3>80</h3>
+                <h3>{{ $perempuan }}</h3>
                 <p>Perempuan</p>
             </div>
             <div class="icon">

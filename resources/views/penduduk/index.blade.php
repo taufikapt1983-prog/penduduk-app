@@ -151,32 +151,25 @@ $(document).ready(function() {
 
     $('#tabelPenduduk').DataTable({
 
-        responsive: true,
+    pageLength: 15,
 
-        autoWidth: false,
+    lengthMenu: [
+        [15, 25, 50, 100],
+        [15, 25, 50, 100]
+    ],
 
-        language: {
+    responsive: true,
+    autoWidth: false,
 
-            search: "Cari:",
+    language: {
+        search: "Cari:",
+        lengthMenu: "Tampilkan _MENU_ data",
+        zeroRecords: "Data tidak ditemukan",
+        info: "Menampilkan _START_ sampai _END_ dari _TOTAL_ data",
+        infoEmpty: "Data kosong"
+    }
 
-            lengthMenu: "Tampilkan _MENU_ data",
-
-            zeroRecords: "Data tidak ditemukan",
-
-            info: "Menampilkan _START_ sampai _END_ dari _TOTAL_ data",
-
-            infoEmpty: "Data kosong",
-
-            paginate: {
-                first: "Awal",
-                last: "Akhir",
-                next: "›",
-                previous: "‹"
-            }
-
-        }
-
-    });
+});
 
 });
 
